@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+   position: relative;
+ }
+.nav{
+height: 100px;
+width: 100%;
+background-color:lavenderblush;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 4vw;
+border-bottom:2px solid #dadada;
+
+} 
+.nav button {
+    margin: 1vw 0;
+    font-size: 1vw;
+    padding: 0.8vw 1vw;
+    background-color: coral;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+   font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for interactivity */
+button:hover {
+    background-color: #ff7f50;
+     /* Slightly lighter coral */
+    transform: translateY(-2px); 
+    /* Makes it appear like a button press */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Active state for when the button is pressed */
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+.nav span{
+    color:mediumpurple;
+    font-size: 2vw;
+    font-weight: 600;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+  gap: 1.3vw;
+}
+.nav h4{
+    font-size: 1.5vw;
+    font-weight: 800;
+    padding-right:  2vw;
+    color:darkslateblue;
+}
+.nav i{
+    font-weight: 600;
+    /* padding: 0 1vw;
+    padding-top: 1.2vw;
+    padding-left: 0; */
+    display: none;
+} 
+.content{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+    }
+.left{
+    height: 100%;
+    width: 50%;
+    /* background-color:palevioletred; */
+    /* background-color: cadetblue; */
+    padding: 5vw 4vw;
+}
+.left h1{
+    font-size: 3vw;
+    line-height:4.5vw ;
+}
+.left span{
+    color:mediumpurple;
+}
+.left h3{
+    font-size: 1.2vw;
+    line-height: 2vw;
+}
+.right{
+    height: 100%;
+    width: 50%;
+   
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.content button{
+    margin: 1.5vw 0;
+    font-size: 1.2vw;
+    padding: 1vw 1.3vw;
+    background-color:coral;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+   font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for interactivity */
+button:hover {
+    background-color: #ff7f50;
+     /* Slightly lighter coral */
+    transform: translateY(-2px); 
+    /* Makes it appear like a button press */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Active state for when the button is pressed */
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    .nav{
+        padding: 0 6vw;
+        height: 60px;
+
+    }
+    .nav h2{
+        font-size: 5.1vw;
+    }
+    .nav h4{
+        font-size: 3vw;
+        display: none;
+    }
+    .nav i{
+        display:block;
+        font-size: 4.5vw;
+    }
+    .nav button{
+        display: none;
+    }
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 45%;
+        padding: 4vw 6vw;
+    }
+    .right{
+        width: 100%;
+        height: 55%;
+    }
+    .left h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+    .left p{
+        font-size: 4vw;
+        line-height: 100%;
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+    }
+    .content button{
+        font-size: 3.5vw;
+        padding: 3vw 6vw;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+}
