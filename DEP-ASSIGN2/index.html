@@ -3,23 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>card Slider</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- linked google font for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <!-- linked swiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <title>card Slider</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container swiper">
     <div class="card-wrapper">
-        <ul class="card-list">
-            <li class="card-item">
+        <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
                 <a href="#" class="card-link">
-                    <img sar="images/image1.png" alt="card image1" 
-                class="card-image">
-                <p class="badge">developer</p>
+                <img src="images/image1.png" alt="card image1" class="card-image">
+
+                <p class="badge developer">Developer</p>
                 <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
-             </a>
+                <button class=" card-button 
+                material-symbols-outlined">arrow_forward</button>
+            </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                <img src="images/image.png" alt="card image1" class="card-image">
+
+                <p class="badge marketer">Marketer</p>
+                <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
+                <button class=" card-button 
+                material-symbols-outlined">arrow_forward</button>
+            </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                <img src="images/image2.png" alt="card image1" class="card-image">
+
+                <p class="badge designer">Designer</p>
+                <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
+                <button class=" card-button 
+                material-symbols-outlined">arrow_forward</button>
+            </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                <img src="images/image3.png" alt="card image1" class="card-image">
+
+                <p class="badge editor">Editor</p>
+                <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
+                <button class=" card-button 
+                material-symbols-outlined">arrow_forward</button>
+            </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="images/image4.png" alt="card image1" class="card-image">
+                    <p class="badge gamer">Gamer</p>
+                    <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
+                    <button class="card-button material-symbols-outlined">arrow_forward</button>
+                </a>
             </li>
         </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
     </div>
     </div>
+    <!-- linked swiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- linked custom script -->
+    <script src="script.js"></script>
 </body>
 </html>
