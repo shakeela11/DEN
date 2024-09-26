@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.47",
+    "purgecss": "^6.0.0"
+  },
+  "scripts": {
+    "purgecss": "purgecss --config purgecss.config.js"
+  }
+}
